@@ -10,7 +10,7 @@ $user = new User();
 if(isset($_SESSION['user'])){
     //echo "hay sesion";
     $user->setUser($userSession->getCurrentUser());
-   
+
 
 
 
@@ -98,7 +98,7 @@ if(isset($_SESSION['user'])){
         <div class="header-body">
           <div class="row align-items-center py-4">
             <div class="col-lg-6 col-7">
-              <h6 class="h2 text-white d-inline-block mb-0">Gestion de centros</h6>
+              <h6 class="h2 text-white d-inline-block mb-0">Gestión de centros</h6>
               <nav aria-label="breadcrumb" class="d-none d-md-inline-block ml-md-4">
                 <ol class="breadcrumb breadcrumb-links breadcrumb-dark">
                   <li class="breadcrumb-item"><a href="../dashboards/dashboard.php"><i class="fas fa-home"></i></a></li>
@@ -107,7 +107,7 @@ if(isset($_SESSION['user'])){
                 </ol>
               </nav>
             </div>
-           
+
           </div>
         </div>
       </div>
@@ -117,49 +117,49 @@ if(isset($_SESSION['user'])){
       <div class="row">
         <div class="col">
           <div class="card-wrapper">
-           
+
             <!-- Default browser form validation -->
             <div class="card">
               <!-- Card header -->
-             
-			  
-			  
-			  
-			  
-			  
-			  
-			  
-			  
-			  
-			  
-			  
-			  
-			  
-			  
-			  
-			  
-			  
-			  
-			  
-			  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
               <!-- Card body -->
               <div class="card-body">
-			  
-			  
+
+
                <div class="row icon-examples">
                 <div style="padding-top: 15px;" class="col-lg-4 col-md-6">
 				<button  type="button" class="btn btn-primary btn-lg btn-block" onclick="location.href=&quot;nuevocentro.php&quot;">
-				
+
 				  <div>
                       <i class="ni ni-fat-add "></i>
                       <span>Nuevo centro</span>
                     </div>
-				
-				
-				
+
+
+
 				</button>
                 </div>
-				
+
                 <div style="padding-top: 15px;"class="col-lg-4 col-md-6">
                   <button type="button" class="btn btn-warning btn-lg btn-block" onclick="location.href=&quot;modificarcentro.php&quot;">
 				 <div>
@@ -168,7 +168,7 @@ if(isset($_SESSION['user'])){
                     </div>
 				  </button>
                 </div>
-				
+
 				 <div style="padding-top: 15px;" class="col-lg-4 col-md-6">
                   <button type="button" class="btn btn-danger btn-lg btn-block" onclick="location.href=&quot;eliminarcentro.php&quot;">
 				  <div>
@@ -177,22 +177,22 @@ if(isset($_SESSION['user'])){
                     </div>
 				  </button>
                 </div>
-				
+
 				</div>
-                
-               
+
+
               </div>
             </div>
             <!-- Default browser form validation -->
-           
-		   
-		   
-		    
+
+
+
+
 			  <div class="row ">
-			  
-			  
+
+
 			  <?php
-			  
+
 	require('../bd/conexion.php');
 
  $empresa=$user->getempresa();
@@ -209,13 +209,13 @@ while($rov=$caa->fetch_assoc()){
 
 
 
-?>			  
-			  
-			  
-			  
-		  
-			  
-			  
+?>
+
+
+
+
+
+
 			  <style>
 			  .avatar {
     font-size: 1rem;
@@ -229,7 +229,7 @@ while($rov=$caa->fetch_assoc()){
     justify-content: center;
 }
 			  </style>
-			  
+
 			   <div class="col-md-4 ">
               <style>
 #foto {
@@ -260,7 +260,7 @@ while($rov=$caa->fetch_assoc()){
                   </h4>
 				       <p class="text-sm text-muted mb-0">C. Costos: <?php echo $costos;  ?></p>
 					        <p class="text-sm text-muted mb-0"><?php echo $responsable;?></p>
-                
+
                   <span class="text-success">●</span>
                   <small>Activo</small>
                 </div>
@@ -278,43 +278,43 @@ while($rov=$caa->fetch_assoc()){
     justify-content: center;
 }
 				  </style>
-				  
+
                   <button type="button" onclick="location.href='centrover.php?valor=<?php echo $rov['id_centro'] ?>'" class="btn btn-sm btn-success">Ver</button>
                 </div>
               </div>
             </div>
           </div>
-          
+
 		   </div>
-		   		   
+
 <?php  } ?>
-		  
+
 		    </div>
-		   
-		   
-		   
-		   
-		   
-		   
-		   
-		   
-		   
-		   
-		   
-		   
-		   
-		   
-      <?php require('../general/footer.php');?> 
-  
-  
-  
-  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <?php require('../general/footer.php');?>
+
+
+
+
   <!-- Argon Scripts -->
   <!-- Core -->
    <!-- Core -->
 
 
-  
+
   <!-- Argon JS -->
   <script src="../../assets/js/argon.min23cd.js?v=1.2.1"></script>
   <!-- Demo JS - remove this in your project -->
@@ -389,7 +389,7 @@ while($rov=$caa->fetch_assoc()){
 
 }else{
     //echo "login";
-    
+
 	?>
 	<script>
 	location.href = "../../index.php";
@@ -398,38 +398,3 @@ while($rov=$caa->fetch_assoc()){
 }
 
 ?>
-
-
-
-
- 
- 
- 
-		   
-		   
-		   
-		   
-		   
-		   
-		   
-		   
-		   
-		   
-		   
-		   
-		   
-		   
-		   
-		   
-		   
-		   
-		   
-		   
-		   
-		   
-		   
-		   
-		   
-		   
-		   
-  
